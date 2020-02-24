@@ -3,5 +3,11 @@
 <h3> Edad: {{age}}</h3>
 <h3>Club: {{club}}</h3>
 <button (click)="ocultarMessi(false)" *ngIf="mostrar_messi">Ocultar</button>
-<button (click)="ocultarMessi(true)" *ngIf="!mostrar_messi">Mostrar</button>-->
-<messi *ngIf="mostrar_messi"></messi>
+<button (click)="ocultarMessi(true)" *ngIf="!mostrar_messi">Mostrar</button>
+<messi *ngIf="mostrar_messi"></messi>-->
+<nav>
+  <a [routerLink]="['/home']" [routerLinkActive]="['active']">Home</a>
+  <a [routerLink]="['/messi']" [routerLinkActive]="['active']">Messi</a>
+  <a [routerLink]="['/contact']" [routerLinkActive]="['active']">Contacto</a>
+</nav>
+<router-outlet></router-outlet>
