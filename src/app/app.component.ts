@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular';
+  public title = 'angular';
+  public mostrar_messi: boolean = true;
+
+  ocultarMessi(value){
+    this.mostrar_messi = value;
+  }
 }
