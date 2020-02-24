@@ -1,4 +1,8 @@
+<h1>Messi component</h1>
 <h2>{{titulo}}</h2>
 <p>{{parrafo}}</p>
+<ul>
+  <li *ngFor="let jugador of messis">{{jugador.name}} - {{jugador.age}} - {{jugador.country}} - {{jugador.club}} - <strong *ngIf="jugador.active">Jugando</strong><strong *ngIf="!jugador.active">Retirado</strong></li>
+</ul>
 
 <button (click)="cambiarTitulo()">Cambiar titulo</button>
